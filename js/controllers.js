@@ -1,6 +1,6 @@
 "use strict"
 var INTEGER_REGEXP = /^\-?\d+$/;
-var emplApp = angular.module('emplApp', ['ngRoute', 'ui.bootstrap', 'ngTouch', 'bootstrap-tagsinput', 'ngTagsInput', 'tagger']);
+var emplApp = angular.module('emplApp', ['ngRoute', 'ui.bootstrap']);
 
 emplApp
 .factory('employeesFactory', function ($http){
@@ -14,7 +14,6 @@ emplApp
         .get('js/data/staff.json')
         .then(function(res){
           employees = res.data; 
-
         });
     };
 
@@ -68,7 +67,6 @@ emplApp
       $('#refreshButton').addClass('disabled');
     }
   });
-
 
     $scope.onSelect = function ($item, $model, $label) {
       tagM.tagsManager('pushTag', $label);
@@ -152,8 +150,6 @@ emplApp
       var index;
 
       $.each( $scope.companies[employeesFactory.getChosenCompany()], function( key, value ) {
-
-
           if(value.name == employeeName){
              index = $scope.companies[employeesFactory.getChosenCompany()].indexOf(value);
           }
@@ -163,9 +159,7 @@ emplApp
 
       angular.element('.tm-tag').each(function(){
         if(angular.element(this).find('span').html() == employeeName){
-
             angular.element(this).find('a').triggerHandler('click');
-
         }
       });
     };
@@ -216,7 +210,3 @@ emplApp.config(['$routeProvider', function ($routeProvider){
         controller: 'leftSideCntr'
       });
 }]);
-
-$(function() {
-    $( "#accordion" ).accordion();
-  });

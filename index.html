@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="emplApp"  >
+<html lang="en" ng-app="emplApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +8,17 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Workers</title>
+    <title>Emloyee</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
+    <script src="vendor/jquery-1.11.1.min.js"></script>
+    <script src="vendor/underscore-min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
-
-    <script src="vendor/jquery-1.11.1.min.js"></script>
-    <script src="vendor/jquery-ui.min.js"></script>
-    <script src="vendor/bootstrap.min.js"></script>
-    <script src="vendor/ejs_production.js"></script>
-    <script src="vendor/typeahead.bundle.min.js"></script>
-    <script src="vendor/underscore-min.js"></script>
-    <script src="vendor/url.min.js"></script>
-    <script src="vendor/angular-ui-router.min.js"></script>
     <script src="vendor/ui-bootstrap.js"></script>
     <script src="vendor/tagmanager.js"></script>
-    <script src="vendor/bootstrap-tagsinput-angular.min.js"></script>
-    <script src="vendor/ng-tags-input.min.js"></script>
-    <script src="vendor/angular-touch.js"></script>
-    <script src="vendor/angular-tagger.min.js"></script>
 
-    <script src="js/build.js"></script>
+    <script src="../build.js"></script>
 
   </head>
     
@@ -46,27 +35,20 @@
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-
                         <div ng-view></div>
-
                     </div>
                 </div>
 
-
                 <div>
-
                     <div class="mycontainer" ng-controller="leftSideCntr">
-
                         <div class="col-md-5" id="rightPanel" >
                            <div my-panel>
                            </div>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
         </div>
-</body>
+  </body>
 </html>

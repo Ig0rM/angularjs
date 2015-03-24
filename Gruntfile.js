@@ -29,7 +29,7 @@ module.exports = function(grunt) {
               src: [
                   'js/*.js' 
               ],
-              dest: 'js/build.js',
+              dest: './build.js',
           }
         },
 

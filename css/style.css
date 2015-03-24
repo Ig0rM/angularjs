@@ -1,17 +1,9 @@
-body{
-
-}
-
 #main{
 	margin: 10% 10%;
 }
 
 #leftPanel{
 	padding: 20px;
-}
-
-#profile{
-/*	border: 1px solid black;*/
 }
 
 #profileContent{
@@ -21,10 +13,6 @@ body{
 #filter{
 	margin-left: 20px;
 	margin-bottom: 5px;
-}
-
-#home{
-/*	border: 1px solid black;*/
 }
 
 #homeContent{
@@ -46,51 +34,20 @@ body{
 	margin: 0px;
 }
 
-
 .tableHeaderCol {
 	background-color: #CECECE;
-/*	border-right: 1px solid black;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;*/
-}
-
-.tableHeaderCol:first-child{
-/*	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;*/
-}
-
-.employeeCol{
-/*	border-right: 1px solid black;
-	border-bottom: 1px solid black;*/
-}
-
-.employeeCol:first-child{
-/*	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;*/
 }
 
 .employeeCommentsCol{
 	display: none;
 	background-color: #D8DFFF;
-/*	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;*/
 }
 
 #rightPanel{
-
-	/*border: 1px solid black;*/
 	margin: 20px 10px 10px 10px;
 }
 
 #addNew{
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-.company .chosen{
-
 }
