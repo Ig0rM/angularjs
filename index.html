@@ -15,6 +15,7 @@
     <script src="vendor/underscore-min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
     <script src="vendor/ui-bootstrap.js"></script>
     <script src="vendor/tagmanager.js"></script>
 
@@ -26,24 +27,26 @@
           <!-- Nav tabs -->
         <div id="main">
             <div class="row">
-
-                <div class="col-md-6" id="leftPanel" ng-controller="leftSideCntr">
+                
+                <div class="col-md-6" id="leftPanel" >
                     <ul class="nav nav-tabs" role="tablist" id="myTab">
-                      <li role="presentation" ng-class="{active:isActive('/home')}"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                      <li role="presentation" ng-class="{active:isActive('/profile')}"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+                      <li role="presentation" ng-class="{active:isActive('/tab1')}"><a ui-sref="tab1" role="tab" data-toggle="tab">Tab1</a></li>
+                      <li role="presentation" ng-class="{active:isActive('/tab2')}"><a ui-sref="tab2" role="tab" data-toggle="tab">Tab2</a></li>
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div ng-view></div>
+                        <div ui-view="tab1"></div>
+                        <div ui-view="tab2"></div>
+                        <!-- <div ng-view></div> -->
                     </div>
                 </div>
-
                 <div>
-                    <div class="mycontainer" ng-controller="leftSideCntr">
+                    <div class="mycontainer" >
                         <div class="col-md-5" id="rightPanel" >
-                           <div my-panel>
-                           </div>
+                            <div ui-view="rPanel"></div>
+                           <!-- <div my-panel>
+                           </div> -->
                         </div>
                     </div>
                 </div>

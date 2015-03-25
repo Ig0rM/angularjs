@@ -1,4 +1,3 @@
-// var routes = require('./backend/routes.js');
 var path = require('path');
 
 module.exports = function(grunt) {
@@ -27,7 +26,8 @@ module.exports = function(grunt) {
         concat: {
           dist: {
               src: [
-                  'js/*.js' 
+                  'js/*.js',
+                  'js/**/*.js'
               ],
               dest: './build.js',
           }
